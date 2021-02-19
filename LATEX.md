@@ -28,13 +28,34 @@ Traditional multirotors \hl{(quadrotors, hexarotors, etc.)} are a type of ...
 
 ## Footnotes
 Example:\
-![alt text](https://github.com/gerber211/latex/blob/main/footnote1.PNG?raw=true)
+![alt text](https://github.com/gerber211/latex/blob/main/footnote1.PNG?raw=true)\
 and at the bottom of the column/page:\
-![alt text](https://github.com/gerber211/latex/blob/main/footnote2.PNG?raw=true)
+![alt text](https://github.com/gerber211/latex/blob/main/footnote2.PNG?raw=true)\
 Preamble: None required in Overleaf.\
 Usage:
 ```latex
 Traditional multirotors\footnote{quadrotors, hexarotors, etc.} are a type of ...
 ```
 
+## Math symbols in text (textcomp)
+Example:\
+![alt text](https://github.com/gerber211/latex/blob/main/textcomp.PNG?raw=true)\
+Preamble:
+```latex
+\usepackage{textcomp}
+```
+Usage:
+```latex
+The average retinal membrane thickness is 50\textpm5 \textmu m, 
+while the average angle is 60\textdegree~without something.
+```
+Notes: This is arguably one of the most important packages to use as it produces math symbols outside of math mode. 
+[The list of options](http://tug.ctan.org/info/symbols/comprehensive/symbols-a4.pdf) is extensive, but some of the most important are:
+```latex
+\textdegree   % The ° (degree) symbol
+\textmu       % Greek lowercase µ
+\textpm       % The ± (plus/minus) symbol
+\texttimes    % The × (times) symbol
+```
+Note that `\textdegree` requires a `~` space after it and if you want to write µm, you need to use `\textmu m` (with a space). 
 
