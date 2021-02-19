@@ -23,5 +23,20 @@ Use for journal paper revision to highlight text
 \definecolor{lightGRN}{rgb}{.75,1,.75}  % Define a new color, in this case light green
 \sethlcolor{lightGRN}                   % Set the \hl{} tag color to be lightGRN, as defined above
 ```
+Sample usage:
+```latex
+Traditional multirotors \hl{(quadrotors, hexarotors, etc.)} are a type of ... 
+```
 Which results in:\
 ![alt text](https://github.com/gerber211/latex/blob/main/grnHighlight.PNG?raw=true)
+
+## Footnotes
+To add a footnote in Overleaf, no packages are required. Sample usage is:
+```latex
+Traditional multirotors\footnote{quadrotors, hexarotors, etc.} are a type of ...
+```
+Which results in:\
+![alt text](https://github.com/gerber211/latex/blob/main/footnote1.PNG?raw=true)
+and at the bottom of the column/page:\
+![alt text](https://github.com/gerber211/latex/blob/main/footnote2.PNG?raw=true)
+
