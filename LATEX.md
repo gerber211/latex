@@ -1,3 +1,22 @@
+## Common math
+Example:\
+![alt text](https://github.com/gerber211/latex/blob/main/generalMath.PNG?raw=true)\
+Preamble: 
+```latex
+\usepackage{amsmath,amssymb,bm}   % Common math
+```
+Notes: These are the three most common math packages, included in a single call to `\usepackage{}`. The first two enable common math notation while the third, `bm`, enables __bold__ symbols for vector notation.\
+Usage: 
+```latex
+Note that $d_e$ is the perpendicular distance from $\bm{c}_t$ to $\bm{p}_c$, calculated as
+\begin{equation} \label{exampleEquation}
+d_e = \left\lVert \left( \bm{a}_t-\bm{p}_c \right) - \left[\left(\bm{a}_t-\bm{p}_c\right) \cdot \bm{\hat{n}}_t \right] \bm{\hat{n}}_t \right\rVert
+\end{equation}
+where
+$\bm{a}_t\in\mathbb{R}^{3}$ is any point on $\bm{c}_t$ and $\bm{\hat{n}}_t$ is a unit vector in the direction of $\bm{c}_t$.
+```
+
+
 ## Revised text color change
 Example:\
 ![alt text](https://github.com/gerber211/latex/blob/main/redText.PNG?raw=true)\
