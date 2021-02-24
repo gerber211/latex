@@ -1,7 +1,7 @@
 # Useful LaTeX Code
 Useful LaTeX Templates and Code: See [LATEX.md](https://github.com/gerber211/latex/blob/main/LATEX.md)
 
-## To add
+## MJG todo list:
 * Custom commands: norm symbol 
 * Tables 
 * Figures chunk code, \graphicx
