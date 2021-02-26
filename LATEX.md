@@ -81,7 +81,7 @@ Note that `\textdegree` requires a `~` space after it and if you want to write �
 ## Custom commands 
 Example:\
 ![alt text](https://github.com/gerber211/latex/blob/main/norm.PNG?raw=true)\
-Preamble:\
+Preamble:
 ```latex
 \newcommand{\norm}[1]{ \left\lVert#1\right\rVert }	% Double-bar norm symbol
 ```
@@ -90,3 +90,69 @@ Usage:
 a = \norm{ \bm{b} }
 ```
 
+## Good-looking transpose symbole
+Example:\
+![alt text](https://github.com/gerber211/latex/blob/main/transpose.PNG?raw=true)\
+Preamble:
+```latex
+\newcommand{\transpose}[0]{ ^{\mathsf{T}} }         % Best-looking transpose symbol
+```
+Usage: 
+```latex
+\bm{R} = \bm{R}\transpose
+```
+
+
+## Dummy Table
+Example:\
+![alt text](https://github.com/gerber211/latex/blob/main/table.PNG?raw=true)\
+Preamble:
+```latex
+\usepackage{booktabs}   % For nicer tables (horizontal lines, etc.)
+```
+Usage:
+```latex
+\begin{table}[!h] \centering
+\caption{Example table caption} \label{labelName}
+\begin{tabular}{@{}cccc@{}}
+\toprule
+~          & \textbf{a} & \textbf{b} & \textbf{c} \\
+~          & [mm]       & [s]        & [px]       \\
+\midrule
+\textbf{A} & 1          & 2          & 3 \\
+\textbf{B} & 1          & 2          & 3 \\
+\textbf{C} & 1          & 2          & 3 \\
+\bottomrule
+\end{tabular} \end{table}
+```
+Note 1: It is strongly encouraged to take the time to add whitespace and align the columns as done here.\
+Note 2: If you have little graphic-design experience, [this animated .gif](https://i.imgur.com/ZY8dKpA.gif) does a good job of demonstrating simple methods to improve the appearance of a table. 
+
+
+## Dummy Figure
+Example:\
+![alt text](https://github.com/gerber211/latex/blob/main/figure.PNG?raw=true)\
+Preamble:
+```latex
+\usepackage{graphicx}   % For figures
+```
+Usage:
+```latex
+\begin{figure}[!h]
+\centering
+\includegraphics[width=0.4\textwidth]{figures/starwars.jpg}
+\caption{Always use full sentences and add clear description in figure captions.}
+\label{labelName}
+\end{figure}
+```
+Note 1: Name the figure directory something intelligent; e.g., "figures" or "figs". 
+Note 2: Do *__not__* use a label name with a hyphen or colon in it---use [camelCase](https://en.wikipedia.org/wiki/Camel_case) if necessary. The reason is because later, if you want to select that label text (to copy, delete, or something), the symbol will add additional clicks---a minor annoyance for a single label, but a time sink for an entire document.
+
+## Common math symbols
+Usage:
+```latex
+\in         % ∈
+\forall     % ∀
+\mathbb{R}  % Real numbers
+\mathbb{Z}  % Integers 
+```
