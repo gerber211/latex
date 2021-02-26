@@ -78,3 +78,15 @@ Notes: This is arguably one of the most important packages to use as it produces
 ```
 Note that `\textdegree` requires a `~` space after it and if you want to write µm, you need to use `\textmu m` (with a space). 
 
+## Custom commands 
+Example:\
+![alt text](https://github.com/gerber211/latex/blob/main/norm.PNG?raw=true)\
+Preamble:\
+```latex
+\newcommand{\norm}[1]{ \left\lVert#1\right\rVert }	% Double-bar norm symbol
+```
+Usage: 
+```latex
+a = \norm{ \bm{b} }
+```
+
